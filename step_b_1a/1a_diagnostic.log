@@ -1,0 +1,86 @@
+2026-03-09 13:42:35 | INFO     | MSSP | Log file: ./results/step_b_1a/1a_diagnostic.log
+2026-03-09 13:42:35 | INFO     | MSSP.1a | === MSSP 1A PSD Diagnostic ===
+2026-03-09 13:42:35 | INFO     | MSSP.1a | Output dir: ./results/step_b_1a
+2026-03-09 13:42:35 | INFO     | MSSP.1a | Freq bins: 64 (step_b used 8)
+2026-03-09 13:42:35 | INFO     | MSSP.1a | Loading images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a …
+2026-03-09 13:42:36 | INFO     | MSSP.1a | Real: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/0_real
+2026-03-09 13:42:37 | INFO     | MSSP.1a | ProGAN: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/1_fake
+2026-03-09 13:42:39 | INFO     | MSSP.1a | SD_v1.5: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/SD_v1.5/1_fake
+2026-03-09 13:42:40 | INFO     | MSSP.1a | Wukong: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/Wukong/1_fake
+2026-03-09 13:42:40 | INFO     | MSSP.1a | Categories loaded: ['Real', 'ProGAN', 'SD_v1.5', 'Wukong']
+2026-03-09 13:42:40 | INFO     | MSSP.1a | Initialising MSSPBackbone …
+2026-03-09 13:43:40 | INFO     | MSSP | Log file: ./results/step_b_1a/1a_diagnostic.log
+2026-03-09 13:43:40 | INFO     | MSSP.1a | === MSSP 1A PSD Diagnostic ===
+2026-03-09 13:43:40 | INFO     | MSSP.1a | Output dir: ./results/step_b_1a
+2026-03-09 13:43:40 | INFO     | MSSP.1a | Freq bins: 64 (step_b used 8)
+2026-03-09 13:43:40 | INFO     | MSSP.1a | Loading images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a …
+2026-03-09 13:43:42 | INFO     | MSSP.1a | Real: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/0_real
+2026-03-09 13:43:42 | INFO     | MSSP.1a | ProGAN: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/1_fake
+2026-03-09 13:43:43 | INFO     | MSSP.1a | SD_v1.5: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/SD_v1.5/1_fake
+2026-03-09 13:43:44 | INFO     | MSSP.1a | Wukong: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/Wukong/1_fake
+2026-03-09 13:43:44 | INFO     | MSSP.1a | Categories loaded: ['Real', 'ProGAN', 'SD_v1.5', 'Wukong']
+2026-03-09 13:43:44 | INFO     | MSSP.1a | Initialising MSSPBackbone …
+2026-03-09 13:52:34 | INFO     | MSSP | Log file: ./results/step_b_1a/1a_diagnostic.log
+2026-03-09 13:52:34 | INFO     | MSSP.1a | === MSSP 1A PSD Diagnostic ===
+2026-03-09 13:52:34 | INFO     | MSSP.1a | Output dir: ./results/step_b_1a
+2026-03-09 13:52:34 | INFO     | MSSP.1a | Freq bins: 64 (step_b used 8)
+2026-03-09 13:52:34 | INFO     | MSSP.1a | Loading images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a …
+2026-03-09 13:52:37 | INFO     | MSSP.1a | Real: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/0_real
+2026-03-09 13:52:37 | INFO     | MSSP.1a | ProGAN: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/ProGAN/1_fake
+2026-03-09 13:52:38 | INFO     | MSSP.1a | SD_v1.5: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/SD_v1.5/1_fake
+2026-03-09 13:52:40 | INFO     | MSSP.1a | Wukong: 50 images from /data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a/Wukong/1_fake
+2026-03-09 13:52:40 | INFO     | MSSP.1a | Categories loaded: ['Real', 'ProGAN', 'SD_v1.5', 'Wukong']
+2026-03-09 13:52:40 | INFO     | MSSP.1a | Initialising MSSPBackbone …
+2026-03-09 13:52:47 | INFO     | MSSP.1a | Extracting residuals (5 timesteps × 4 categories)…
+2026-03-09 13:52:47 | INFO     | MSSP.1a | Extracting residuals for 'Real' (50 images)…
+2026-03-09 13:52:57 | INFO     | MSSP.1a | Extracting residuals for 'ProGAN' (50 images)…
+2026-03-09 13:53:08 | INFO     | MSSP.1a | Extracting residuals for 'SD_v1.5' (50 images)…
+2026-03-09 13:53:18 | INFO     | MSSP.1a | Extracting residuals for 'Wukong' (50 images)…
+2026-03-09 13:53:28 | INFO     | MSSP.1a | Saving residuals cache → ./results/step_b_1a/1a_residuals_cache.npz
+2026-03-09 13:54:34 | INFO     | MSSP.1a | Computing fine-grained PSD (64 bins) …
+2026-03-09 13:54:44 | INFO     | MSSP.1a | Computing original image (x₀) PSD separability …
+2026-03-09 13:54:45 | INFO     | MSSP.1a | === Key findings ===
+2026-03-09 13:54:45 | INFO     | MSSP.1a | F-stat matrix shape: (5, 64)
+2026-03-09 13:54:45 | INFO     | MSSP.1a | Top 20 (timestep, freq_bin) by F-statistic:
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #1  t=600  f=0.1211  F=34.54  p=5.76e-18
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #2  t=600  f=0.1133  F=33.46  p=1.66e-17
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #3  t=600  f=0.1367  F=33.28  p=1.97e-17
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #4  t=600  f=0.1055  F=32.17  p=5.91e-17
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #5  t=600  f=0.1289  F=31.28  p=1.44e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #6  t=600  f=0.1445  F=30.56  p=2.98e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #7  t=400  f=0.0039  F=30.50  p=3.16e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #8  t=200  f=0.0039  F=30.23  p=4.17e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #9  t=600  f=0.1523  F=29.93  p=5.65e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #10  t=600  f=0.0898  F=29.71  p=7.04e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #11  t=600  f=0.1680  F=29.43  p=9.42e-16
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #12  t=600  f=0.1836  F=28.97  p=1.50e-15
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #13  t=600  f=0.0977  F=28.94  p=1.56e-15
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #14  t=600  f=0.0039  F=27.69  p=5.66e-15
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #15  t=400  f=0.1211  F=27.56  p=6.47e-15
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #16  t=400  f=0.1836  F=26.97  p=1.20e-14
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #17  t=600  f=0.1602  F=26.74  p=1.52e-14
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #18  t=600  f=0.0742  F=26.69  p=1.62e-14
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #19  t=600  f=0.1992  F=25.45  p=6.02e-14
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   #20  t=600  f=0.0820  F=25.43  p=6.11e-14
+2026-03-09 13:54:45 | INFO     | MSSP.1a | Per-timestep maximum F-statistic:
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=200: max F=30.23 at f=0.0039 (bin 0)
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=400: max F=30.50 at f=0.0039 (bin 0)
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=600: max F=34.54 at f=0.1211 (bin 15)
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=800: max F=20.33 at f=0.0039 (bin 0)
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=999: max F=4.01 at f=0.0430 (bin 5)
+2026-03-09 13:54:45 | INFO     | MSSP.1a | x₀ PSD separability: max F=46.88 at f=0.4102
+2026-03-09 13:54:45 | INFO     | MSSP.1a | Residual PSD separability (max across all t): max F=34.54
+2026-03-09 13:54:45 | INFO     | MSSP.1a | → ADM probing does NOT add information beyond raw x₀ PSD
+2026-03-09 13:54:45 | INFO     | MSSP.1a | At f=H/8 (bin 15, f≈0.1211):
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=200: F=18.481, p=1.34e-10
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=400: F=27.562, p=6.47e-15
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=600: F=34.539, p=5.76e-18
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=800: F=11.218, p=7.96e-07
+2026-03-09 13:54:45 | INFO     | MSSP.1a |   t=999: F=0.474, p=7.01e-01
+2026-03-09 13:54:45 | INFO     | MSSP.1a | Generating plots …
+2026-03-09 13:54:46 | INFO     | MSSP.1a | Saved PSD curves: ./results/step_b_1a/1a_psd_curves.png
+2026-03-09 13:54:47 | INFO     | MSSP.1a | Saved F-stat heatmap: ./results/step_b_1a/1a_fstat_heatmap.png
+2026-03-09 13:54:47 | INFO     | MSSP.1a | Saved top discriminative bar chart: ./results/step_b_1a/1a_top_discriminative.png
+2026-03-09 13:54:47 | INFO     | MSSP.1a | Saved x0 vs residual comparison: ./results/step_b_1a/1a_x0_vs_residual.png
+2026-03-09 13:54:47 | INFO     | MSSP.1a | Results JSON: ./results/step_b_1a/1a_results.json
+2026-03-09 13:54:47 | INFO     | MSSP.1a | Total time: 132.8s
