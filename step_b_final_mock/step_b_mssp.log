@@ -1,0 +1,49 @@
+2026-03-06 15:35:31 | INFO     | MSSP | Log file: ./results/step_b_final_mock/step_b_mssp.log
+2026-03-06 15:35:31 | INFO     | MSSP.validation | MSSP Step B Validation
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Args: {'mock': True, 'data_dir': None, 'model_path': '', 'num_samples': 8, 'output_dir': './results/step_b_final_mock', 'device': 'cpu', 'batch_size': 4, 'image_size': 256, 'seed': 42, 'skip_tests': ''}
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Loading mock data...
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Mock mode: generating 8 random images per category
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Data loaded: 4 categories, {'Real': 8, 'ProGAN': 8, 'SD_v1.5': 8, 'Wukong': 8}
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Initialising MSSPBackbone (mock=True)...
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Feature extractor: dim=185
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Extracting 185D MSSP features...
+2026-03-06 15:35:31 | INFO     | MSSP.validation | Extracting features for 'ProGAN' (8 images)...
+2026-03-06 15:35:32 | INFO     | MSSP.validation |   Done: 8 images in 0.9s (8.52 img/s)
+2026-03-06 15:35:32 | INFO     | MSSP.validation | Extracting features for 'Real' (8 images)...
+2026-03-06 15:35:33 | INFO     | MSSP.validation |   Done: 8 images in 0.9s (8.92 img/s)
+2026-03-06 15:35:33 | INFO     | MSSP.validation | Extracting features for 'SD_v1.5' (8 images)...
+2026-03-06 15:35:34 | INFO     | MSSP.validation |   Done: 8 images in 1.1s (7.53 img/s)
+2026-03-06 15:35:34 | INFO     | MSSP.validation | Extracting features for 'Wukong' (8 images)...
+2026-03-06 15:35:35 | INFO     | MSSP.validation |   Done: 8 images in 0.9s (8.60 img/s)
+2026-03-06 15:35:35 | INFO     | MSSP.validation | Features cached: ./results/step_b_final_mock/mssp_features.npz (shape=(32, 185))
+2026-03-06 15:35:35 | INFO     | MSSP.validation | Extracting raw residuals for PSD analysis...
+2026-03-06 15:35:35 | INFO     | MSSP.validation | Extracting residuals for 'Real' (8 images)...
+2026-03-06 15:35:35 | INFO     | MSSP.validation | Extracting residuals for 'ProGAN' (8 images)...
+2026-03-06 15:35:35 | INFO     | MSSP.validation | Extracting residuals for 'SD_v1.5' (8 images)...
+2026-03-06 15:35:36 | INFO     | MSSP.validation | Extracting residuals for 'Wukong' (8 images)...
+2026-03-06 15:35:36 | INFO     | MSSP.validation | === Test 1: GAN High-Frequency PSD (t=200) ===
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   Real: mean high-freq power = 11.6104 ± 0.0033
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   ProGAN: mean high-freq power = 11.6087 ± 0.0035
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   SD_v1.5: mean high-freq power = 11.6095 ± 0.0033
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   Wukong: mean high-freq power = 11.6107 ± 0.0019
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   ProGAN/Real high-freq ratio = 1.000 (threshold > 2.0) → FAIL
+2026-03-06 15:35:36 | INFO     | MSSP.validation |   Saved: ./results/step_b_final_mock/test1_gan_hf_psd.png
+2026-03-06 15:35:37 | INFO     | MSSP.validation | === Test 2: SD VAE 8px Artifact (t=400, t=600) ===
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   VAE artifact band: f ∈ [0.1250, 0.1875] (band index 2/8)
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   t=400: SD mean=11.7301, Real mean=11.7300, z-score=0.016 (threshold > 2.0) → FAIL
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   t=600: SD mean=11.7779, Real mean=11.7789, z-score=-0.055 (threshold > 2.0) → FAIL
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   Saved: ./results/step_b_final_mock/test2_vae_artifact.png
+2026-03-06 15:35:37 | INFO     | MSSP.validation | === Test 3: k-NN Classification (k=5, 5-fold CV) ===
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   Fold 1/5: accuracy = 0.0%
+2026-03-06 15:35:37 | INFO     | MSSP.validation |   Fold 2/5: accuracy = 0.0%
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   Fold 3/5: accuracy = 0.0%
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   Fold 4/5: accuracy = 0.0%
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   Fold 5/5: accuracy = 33.3%
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   Overall: 6.7% ± 13.3% (threshold ≥ 84%) → FAIL
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   DRIFT baseline (step_a Test5): 84.0% ± 3.6%
+2026-03-06 15:35:38 | INFO     | MSSP.validation |   Saved: ./results/step_b_final_mock/test3_knn_accuracy.png
+2026-03-06 15:35:38 | INFO     | MSSP.validation | === Test 4: Multi-Scale PSD Visualization ===
+2026-03-06 15:35:42 | INFO     | MSSP.validation |   Saved: ./results/step_b_final_mock/test4_multiscale_psd.png
+2026-03-06 15:35:42 | INFO     | MSSP.validation | Report saved: ./results/step_b_final_mock/step_b_report.txt
+2026-03-06 15:35:42 | INFO     | MSSP.validation | JSON results: ./results/step_b_final_mock/step_b_results.json
+2026-03-06 15:35:42 | INFO     | MSSP.validation | Total time: 10.8s

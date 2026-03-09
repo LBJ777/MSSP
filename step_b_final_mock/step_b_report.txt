@@ -1,0 +1,40 @@
+======================================================================
+MSSP Step B Validation Report
+======================================================================
+Date: 2026-03-06 15:35:42
+Mode: MOCK
+Samples per category: 8
+Device: cpu
+Total time: 10.8s
+
+======================================================================
+Hypothesis Verification
+======================================================================
+
+Test 1 — GAN High-Frequency Artifacts (t=200)
+  Hypothesis: ProGAN high-freq PSD > 2x Real
+  ProGAN/Real ratio: 1.000
+  Result: FAIL
+
+Test 2 — SD VAE 8px Artifact (t=400-600)
+  Hypothesis: SD f=H/8 z-score > 2.0 in residual space
+  Reference (DRIFT G5 on x_T): z = 0.0013
+  t400: z-score = 0.016 (FAIL)
+  t600: z-score = -0.055 (FAIL)
+  Overall Test 2: FAIL
+
+Test 3 -- k-NN Classification Accuracy
+  Hypothesis: MSSP k-NN >= 84% (DRIFT baseline)
+  MSSP accuracy: 6.7% +/- 13.3%
+  DRIFT baseline: 84.0%
+  Result: FAIL
+
+Test 4 -- Multi-Scale PSD Visualization
+  Result: Generated (see test4_multiscale_psd.png)
+
+======================================================================
+OVERALL: SOME TESTS FAILED
+======================================================================
+
+Note: In MOCK mode, results are random and expected to fail.
+Run with real data and ADM checkpoint for meaningful results.
